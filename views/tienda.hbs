@@ -1,0 +1,25 @@
+<div class="container mt-5 text-center">
+    <h1>Products</h1>
+    <br>
+    <div class="row ">
+
+        {{#each products}}
+
+
+
+        <div class="col-md-4 mb-4 w-25 text-center">
+            <div class="card">
+                <img src="{{ thumbnail}}" class="card-img-top w-25">
+                <div class="card-body text-center">
+                    <h5 class="card-title">{{title}} </h5>
+                    <p class="card-text"> {{description}}</p>
+                    <p class="card-text">{{price}}</p>
+                    <button class="btn btn-dark"><a href="#" style="color:white; text-decoration:none">Añadir al
+                            carrito</a></button>
+                </div>
+            </div>
+        </div>
+
+        {{/each}}
+
+    </div>
